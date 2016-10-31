@@ -4,39 +4,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Program1
+namespace ProgramCharracter
 {
     class Program
     {
-        /* Pada program ini menjelaskan bahwa
-                       Variabel yang dideklarasikan di dalam suatu blok tidak akan dikenali oleh
-                       blok blok yang bersangkutan*/
-
-        //kita mulai program nya 
-
-        static void Program1()
+        static void Main()
         {
 
-            int a = 10;
+            char c;
+            string input;
 
-            Console.WriteLine("Dalam method Program1");
-            Console.WriteLine("a = "+ a);
-            Console.WriteLine("n = "+ n); //pada console ini tidak akan berjalan. karena, variabel "n" tidak ada dalam method Program1()
-            Console.WriteLine("I = "+ i); //pada console ini tidak akan berjalan. karena, variabel "i" tidak ada dalam method Program1()
-            Console.WriteLine();
-            
-        }
+            Console.Write("Masukkan sebuah karakter ");
+            input = Console.ReadLine();
 
-        static void Program2()
-        {
-            int n = 12;
-            Console.WriteLine("Dalam method Program1");
-            Console.WriteLine("a = " + a);//pada console ini tidak akan berjalan. karena, variabel "n" tidak ada dalam method Program2()
-            Console.WriteLine("n = " + n); 
-            Console.WriteLine("I = " + i);//pada console ini tidak akan berjalan. karena, variabel "i" tidak ada dalam method Program2()
-            Console.WriteLine();
+            if (char.TryParse(input, out c)) {
+                 if (c == 'a' || c == 'A' ||
+                     c == 'i' || c == 'I' ||
+                     c == 'u' || c == 'U' ||
+                     c == 'e' || c == 'E' ||
+                     c == 'o' || c == 'O')
+                {
+                    Console.WriteLine("Anda Memasukkan Huruf Fokal");
+                }else{
+                    Console.WriteLine("Karakter yang Anda Masukkan Bukan Huruf Fokal");
+                     }
 
+            }else{
 
+                Console.WriteLine("Karakter yang Anda Masukkan tidak dapat di konversi ke tipe Char"); // ditanyakan?? fungsinya console ini utk apa ya?
+            }
+
+            Console.ReadLine();
         }
     }
 }
