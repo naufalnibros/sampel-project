@@ -1,0 +1,6 @@
+F:\PROJECT C#\Program Biodata\Program Biodata\bin\Debug\Program Biodata.exe.config
+F:\PROJECT C#\Program Biodata\Program Biodata\obj\Debug\Program Biodata.csprojResolveAssemblyReference.cache
+F:\PROJECT C#\Program Biodata\Program Biodata\bin\Debug\Program Biodata.exe
+F:\PROJECT C#\Program Biodata\Program Biodata\bin\Debug\Program Biodata.pdb
+F:\PROJECT C#\Program Biodata\Program Biodata\obj\Debug\Program Biodata.exe
+F:\PROJECT C#\Program Biodata\Program Biodata\obj\Debug\Program Biodata.pdb
